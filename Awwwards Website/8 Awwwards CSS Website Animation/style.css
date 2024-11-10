@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle{
+    width: 15vw;
+    height: 15vw;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle h1{
+    font-size: 1vw;
+    color: white; 
+}
+.cir{
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#cir1{
+    animation: cir 3s linear 1s infinite;
+}
+#cir2{
+    animation: cir 3s linear 1.5s infinite;
+}
+#cir3{
+    animation: cir 3s linear 2s infinite;
+}
+@keyframes cir {
+    0%{
+        width: 0vw;
+        height: 0vw;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 40vw;
+        height: 40vw;
+        opacity: 0;
+    }
+}
